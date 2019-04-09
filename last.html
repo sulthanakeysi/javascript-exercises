@@ -1,0 +1,15 @@
+<!--3.Write a JavaScript function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of the array.-->
+
+<script>
+var temp = [];
+let last = (arr , n = 1 ) => {
+    var a = arr.length-1;
+    for(i=0; i < n; i++){
+       temp.unshift(arr[a]);
+       a--;
+    }
+    return temp;
+}
+
+console.log(last(["a","b","c"], 2));
+</script>

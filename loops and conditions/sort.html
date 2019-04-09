@@ -1,0 +1,30 @@
+<!--3. Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the result. -->
+<script>
+
+    let a = -30;
+    let b = -3;
+    let c = 5;
+
+    if(a < b && a < c){
+        if(b < c)
+            window.alert(` ${c},${b},${a}`);
+
+        else
+        window.alert(`${b},${c},${a}`);
+    }
+    else if(b<a && b < c){
+        if(a < c)
+            window.alert(` ${c},${a},${b}`);
+
+        else
+        window.alert(`${a},${c},${b}`);
+    }
+    else{
+        if(a < b)
+            window.alert(` ${b},${a},${c}`);
+
+        else
+        window.alert(`${a},${b},${c}`);
+    }
+
+</script>
