@@ -1,0 +1,14 @@
+<!--9. Write a JavaScript function to capitalize the first letter of each word in a string.-->
+<script>
+
+    let capitalize = string => {
+        let split = string.toLowerCase().split(' ');
+        for ( i = 0; i < split.length; i++) {
+            split[i] = split[i].charAt(0).toUpperCase() + split[i].substring(1);     
+   }
+
+   return split.join(' ');
+    }
+    console.log(capitalize("hi hllo world "));
+
+</script>
