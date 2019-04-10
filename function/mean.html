@@ -1,0 +1,19 @@
+<!--5.Write a function mean that accepts an array filled with numbers and 
+    returns the arithmetic mean of those numbers. 
+    mean([1, 2, 3]) should return (1+2+3)/3 = 2.-->
+
+
+<script>
+
+    let mean = arr => {
+        var sum = 0;
+        arr.forEach(element =>  sum += element);
+      
+
+        document.write(sum/arr.length);
+    }
+
+    mean([1,2,3]);
+
+
+</script>
