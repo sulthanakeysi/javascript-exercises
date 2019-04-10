@@ -1,0 +1,40 @@
+<!--2.Write a function midrange, that calculates the midrange of 3 numbers. 
+    The midrange is the mean of the smallest and largest number. 
+    midrange(3, 9, 1) should return (9+1)/2 = 5.-->
+
+
+<script>
+
+
+    var largest = (num1,num2,num3) => {
+        if(num1>=num2 && num1>=num3)
+           return num1;
+        else if(num2>=num1 && num2 >=num3)
+            return num2;
+        else 
+            return num3;
+    }
+
+    var smallest = (num1,num2,num3) => {
+        if(num1<=num2 && num1<=num3)
+            return num1;
+        else if(num2<=num1 && num2 <=num3)
+            return num2;
+        else 
+            return num3;
+    }
+
+    let midRange = (num1,num2,num3) => {
+
+        largest = largest(num1,num2,num3);
+        smallest = smallest ( num1,num2,num3);
+
+        return ((largest+smallest)/2);
+
+
+    }
+
+    document.write("mid range:" + midRange(4,2,1));
+
+
+</script>
