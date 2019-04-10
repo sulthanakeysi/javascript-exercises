@@ -1,0 +1,13 @@
+<!--12. Write a JavaScript function to uncamelize a string-->
+
+<script>
+
+    let uncamelize = (str, separator = " ") => {
+        str = str.replace(/[A-Z]/g, letter => separator + letter.toLowerCase());
+        return str.replace("/^" + separator + "/", '');
+    }
+          
+    console.log(uncamelize('helloWorld',"-"));
+         
+          
+</script>

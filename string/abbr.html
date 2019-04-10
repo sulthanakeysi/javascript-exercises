@@ -1,0 +1,15 @@
+<!--5. Write a JavaScript function to convert a string in abbreviated form-->
+
+<script>
+    let abbr = string => {
+            let trim = string.trim();
+            let split = trim.split(" ");
+            if (split.length > 1) {
+                return `${split[0]} ${split[1].charAt(0)}.`;
+            }
+            return split[0];
+        };
+        console.log(abbr("  Robin Singh"));
+        
+
+</script>

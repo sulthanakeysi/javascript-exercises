@@ -1,16 +1,32 @@
 <!--8.Write a JavaScript program which accept a string as input and swap the case of each character.-->
+
+
 <script>
 
-    caseSwap= (string)=>{
-        reg = /[A-Z]/;
-        for(i=0;i<string.length;i++){
-            let t= string.charAt(i)
-            t.replace(reg, /[a-z]/);
-    }
-}
+    let swapCase = string => {
 
+        let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', LOWER = 'abcdefghijklmnopqrstuvwxyz', result = [];
+
+        for(x=0; x<string.length; x++){
+
+            if(UPPER.indexOf(string[x]) !== -1){
+                result.push(string[x].toLowerCase());
+            }
+
+            else if(LOWER.indexOf(string[x]) !== -1){
+                result.push(string[x].toUpperCase());
+            }
+
+            else {
+                result.push(string[x]);
+            }
+        }
+        return result.join('');
+    }
     
-console.log(caseSwap('AaBbc'));
+    console.log(swapCase("case Swap ExaMple"));
+        
+
 
 
 </script>

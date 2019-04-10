@@ -1,0 +1,32 @@
+<!--10. Write a JavaScript function that takes a string which has lower and upper case letters as a parameter and converts upper case letters to lower case, and lower case letters to upper case.-->
+
+
+<script>
+
+        let swapCase = string => {
+    
+            let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', LOWER = 'abcdefghijklmnopqrstuvwxyz', result = [];
+    
+            for(x=0; x<string.length; x++){
+    
+                if(UPPER.indexOf(string[x]) !== -1){
+                    result.push(string[x].toLowerCase());
+                }
+    
+                else if(LOWER.indexOf(string[x]) !== -1){
+                    result.push(string[x].toUpperCase());
+                }
+    
+                else {
+                    result.push(string[x]);
+                }
+            }
+            return result.join('');
+        }
+        
+        console.log(swapCase("AaBbcC"));
+            
+    
+    
+    
+    </script>

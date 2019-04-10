@@ -1,0 +1,13 @@
+<!--14. Write a JavaScript function to insert a string within a string at a particular position (default is 1).-->
+<script>
+
+    let insert = (string, sub = "", index = 0) => {
+       return splitString = string.slice(0,index) + sub + string.slice( index);
+
+    }
+
+    console.log(insert('We are doing some exercises.')); 
+    console.log(insert('We are doing some exercises.','JavaScript ')); 
+    console.log(insert('We are doing some exercises.','JavaScript ',18))
+
+</script>

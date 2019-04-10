@@ -1,0 +1,17 @@
+<!--6. Write a JavaScript function to hide email addresses to protect from unauthorized user.-->
+
+<script>
+
+    let hide = email => {
+            let split, splitLeft, splitRight;
+            split = email.split("@");
+            splitLeft = split[0];
+            avg = splitLeft.length / 2;
+            splitLeft = splitLeft.substring(0, (splitLeft.length - avg));
+            splitRight = split[1];
+            return `${splitLeft}...@${splitRight}`;
+        };
+        
+        console.log(hide("robin_singh@example.com"));
+        
+    </script>

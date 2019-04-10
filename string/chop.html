@@ -1,0 +1,21 @@
+<!--17. Write a JavaScript function to chop a string into chunks of a given length. -->
+
+
+<script>
+    let chop = (string,length = string.length ) =>{
+        let arr = [];
+        for(i=0; i<string.length;){
+            slice = string.slice(i,i+length);
+            i= i+length;
+            
+            arr.push(slice);
+            
+        }
+        return arr;
+        
+    }
+    console.log(chop("hello world",3));
+    console.log(chop('w3resource')); 
+    console.log(chop('w3resource',2)); 
+    console.log(chop('w3resource',3));
+</script>
